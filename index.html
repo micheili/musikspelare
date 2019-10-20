@@ -1,0 +1,123 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>MUSIC PLAYER</title>
+
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Kreon&display=swap" rel="stylesheet">
+  <!--fonts du vill använda -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+  <script defer src="index.js"></script>
+
+</head>
+
+
+
+<body>
+
+            <header>
+
+                    <i class="fas fa-arrow-left leftarrow"></i>
+                      <h6>MUSIC PLAYAH</h6>
+                      <i class="fas fa-ellipsis-v hamburger"></i></header>
+  <section class="musicplayer">
+        
+       
+    <section class="column" id="playlist">
+
+      <article class="song" id="noOneKnows">
+        <img src="https://cdn1.imggmi.com/uploads/2019/10/19/3ff6e5e753b2511b58c2e190f7c0ae02-full.jpg" id="song-img1">
+
+           <div class="songinfo">
+          <h5 id="songtitle0">No One Knows</h5>
+          <p id="artist0"> Organized Mess</p></div>
+        
+        <buttons><i class="far fa-play-circle play-this" song="0"></i>
+        <i class="far fa-pause-circle paus"></i></buttons>
+      </article>
+ 
+      <article class="song">
+        <img src="https://i.pinimg.com/originals/ff/5c/34/ff5c34132773fc73b83d4b8b369e6c6d.jpg" id="song-img2">
+        <div class="songinfo">
+        <h5>My Sharona</h5>
+        <p>Organized Mess</p></div>
+        
+      <buttons><i class="far fa-play-circle play-this"song="1"></i><i class="far fa-pause-circle paus"></i></buttons>
+      </article>
+
+      <article class="song">
+        <img src="https://laughingsquid.com/wp-content/uploads/2019/01/Mr-Blue-Sky-Animated-Video-Jeff-Lynne.jpg" id="song-img3">
+        <div class="songinfo">
+        <h5>Mr Blue Sky</h5>
+        <p>Organized Mess</p></div>
+        
+        <buttons><i class="far fa-play-circle play-this" song="2"></i>
+        <i class="far fa-pause-circle paus"></i></buttons>
+      </article>
+
+      <article class="song">
+        <img src="https://imgshare.io/images/2019/10/20/unnamed.jpg" id="song-img4">
+        <div class="songinfo">
+        <h5>Storytime joke</h5>
+        <p>Organized Mess</p></div>
+          
+        <buttons><i class="far fa-play-circle play-this" song="3"></i><i class="far fa-pause-circle paus"></i></buttons>
+      </article>
+
+      <article class="song">
+        <img src="https://cdn1.imggmi.com/uploads/2019/10/19/7dcf5573ca039c1ad99a017de6a6459f-full.jpg" id="song-img5">
+        <div class="songinfo">
+        <h5>Hot Mess</h5>
+        <p>Organized Mess </p></div>
+        
+        
+            <buttons><i class="far fa-play-circle play-this" song="4"></i><i class="far fa-pause-circle paus"></i></buttons>
+      </article>
+      
+     
+
+        
+      <!--här i ska alla lådor m individuella låtar ligga,
+                titel på låt (h), artistnamn(p), bild (img src) add-knapp, play-knapp-->
+
+    </section>
+
+
+    <section class="column" id="player">
+      
+          <section id="cover">
+          <section id="cover-img"></section>
+      
+          <div id="controls">
+      <i class="fas fa-random" id="shuffle"></i>
+      <i class="fas fa-angle-left go-back"></i>
+      <i class="far fa-play-circle playbutton"></i><i class="far fa-pause-circle pausebutton"></i>
+      <i class="fas fa-angle-right next-song"></i> 
+      
+        <i class="fas fa-redo" id="repeat"></i></div> 
+          <div class="duration">0:00<div class="timeline"></div>3:21</div>
+ 
+
+      </section>
+
+      <footer id="playingStatus">
+            <h5 id="title"></h5>
+            <p id="artist"></p>
+          </footer>
+
+      <!--här i ska själva spelaren vara, titel på låt etc, en stor bild,
+                en tidslinje etc. -->
+
+    </section>
+
+  
+
+</body>
+
+</html>
